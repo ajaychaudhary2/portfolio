@@ -1,3 +1,5 @@
+"use client";
+
 import { FaFileSignature } from "react-icons/fa6";
 import { FaFileAlt } from "react-icons/fa";
 
