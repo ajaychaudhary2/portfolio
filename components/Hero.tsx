@@ -9,7 +9,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-52 scroll-mt-32">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -32,9 +32,9 @@ const Hero = () => {
        *  0.2 to 0.03
        */}
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-        absolute top-0 left-0 flex items-center justify-center"
-      >
+  className="w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+  absolute top-0 left-0 flex items-center justify-center"
+>
         {/* Radial gradient for the container to give a faded look */}
         <div
           // chnage the bg to bg-black-100, so it matches the bg color and will blend in
@@ -63,13 +63,13 @@ const Hero = () => {
             Hi! I&apos;m Ajay Chaudhary, a full-stack data scientist skilled in building data pipelines, training advanced machine learning models, and deploying them using tools like Flask, FastAPI, and cloud platforms. With a strong foundation in Python, SQL, and deep learning, I focus on delivering end-to-end AI solutions that solve real problems
           </p>
 
-          <a href="">
-            <MagicButton
-              title="My Resume"
-              icon={<FaFileSignature />}
-              position="right"
-            />
-          </a>
+        <a href="/Ajay_Resume.pdf" target="_blank" rel="noopener noreferrer">
+  <MagicButton
+    title="My Resume"
+    icon={<FaFileSignature />}
+    position="right"
+  />
+</a>
         </div>
       </div>
     </div>

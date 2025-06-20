@@ -83,3 +83,54 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+@layer utilities {
+  .gpu-boost {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+pre {
+  background: linear-gradient(to right, #0d0d0d, #0b0b0b ); /* gradient black */
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  color: #f8f8f2; /* Light text */
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid #2a2a2a;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+}
+
+.chat-list p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.chat-list strong {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.chat-list ul, .chat-list ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
